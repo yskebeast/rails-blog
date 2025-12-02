@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  namespace :api do
+    post "articles/create", to: "articles#create", as: "articles_create"
+    get "articles/index", to: "articles#index", as: "articles_index"
+    get "articles/show/:id", to: "articles#show", as: "articles_show"
+    put "articles/update/:id", to: "articles#update", as: "articles_update"
+    delete "articles/destroy/:id", to: "articles#destroy", as: "articles_destroy"
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

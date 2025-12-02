@@ -5,12 +5,12 @@
 ### 記事
 
 - 記事作成
-  post: v1/articles
+  post: api/articles
 - 記事一覧
-  get: v1/articles
+  get: api/articles
 - 記事詳細
-  get: v1/articles/{id}
+  get: api/articles/{id}
 - 記事更新
-  patch: v1/articles/{id}
+  patch: api/articles/{id}
 - 記事削除
-  delete: v1/articles/{id}
+  delete: api/articles/{id}
